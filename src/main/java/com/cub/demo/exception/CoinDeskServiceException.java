@@ -5,14 +5,15 @@ import lombok.EqualsAndHashCode;
 
 @Data
 @EqualsAndHashCode(callSuper=true)
-public class HttpStatusException extends Exception{
-	
+public class CoinDeskServiceException extends Exception{
+
 	private static final long serialVersionUID = 1L;
 	
 	private String errorStatus;
 	
-	public HttpStatusException(String errorStatus,String message) {
+	public CoinDeskServiceException(String errorStatus,String message) {
 		super(message);
 		this.errorStatus = errorStatus;
 	}
+
 }
