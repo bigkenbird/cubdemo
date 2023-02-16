@@ -2,7 +2,6 @@ package com.cub.demo.dto.innerobj;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
-import com.fasterxml.jackson.databind.deser.std.NumberDeserializers.DoubleDeserializer;
 import com.fasterxml.jackson.databind.deser.std.NumberDeserializers.NumberDeserializer;
 
 import lombok.Data;

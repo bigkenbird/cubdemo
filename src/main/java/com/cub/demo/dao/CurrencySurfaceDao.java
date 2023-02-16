@@ -14,8 +14,6 @@ public interface CurrencySurfaceDao extends JpaRepository<CurrencySurface, Integ
 	
 	public Optional<CurrencySurface> findById(Integer id);
 	
-	public CurrencySurface  save(CurrencySurface currencySurface);
-	
 	public void deleteById(Integer id);
-
+	
 }

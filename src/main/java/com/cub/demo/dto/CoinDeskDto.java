@@ -24,4 +24,6 @@ public class CoinDeskDto {
 	@JsonProperty("bpi")
 	private Bpi bpi;
 	
+	private String currencyChinese;
+	
 }

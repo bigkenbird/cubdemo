@@ -1,6 +1,6 @@
 package com.cub.demo.model;
 
-import java.sql.Date;
+import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -8,6 +8,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 import lombok.Data;
 
@@ -27,13 +29,15 @@ public class CurrencySurface {
 	@Column(name="currency_chinese")
 	private String currencyChinese;
 	
-	@Column(name="create_date")
-	private Date createDate;
+	@Column(name="create_date",updatable = false)
+	@Temporal(TemporalType.TIMESTAMP)
+	private Date  createDate;
 	
-	@Column(name="create_by")
+	@Column(name="create_by",updatable = false)
 	private String createBy;
 	
 	@Column(name="update_date")
+	@Temporal(TemporalType.TIMESTAMP)
 	private Date updateDate;
 	
 	@Column(name="update_by")

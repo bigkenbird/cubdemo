@@ -13,7 +13,7 @@ import com.cub.demo.dao.CurrencySurfaceDao;
 import com.cub.demo.dto.CoinDeskDto;
 import com.cub.demo.exception.HttpStatusException;
 import com.cub.demo.model.CurrencySurface;
-import com.cub.demo.servcie.CoinDeskService;
+import com.cub.demo.servcie.CurrencyService;
 
 @SpringBootTest
 class CubdemoApplicationTests {
@@ -21,7 +21,7 @@ class CubdemoApplicationTests {
 	Logger logger = LoggerFactory.getLogger(CubdemoApplicationTests.class);
 	
 	@Autowired
-	CoinDeskService coinDeskService;
+	CurrencyService coinDeskService;
 	
 	@Autowired
 	CurrencySurfaceDao currencySurfaceDao;

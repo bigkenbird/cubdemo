@@ -2,11 +2,11 @@ USE test;
 
 CREATE TABLE CurrencySurface (
 id INT AUTO_INCREMENT,
-currency_code CHAR(6) NOT NULL,
+currency_code NVARCHAR(6) NOT NULL,
 currency_chinese NVARCHAR(20) NOT NULL,
-create_date DATETIME NOT NULL,
+create_date DateTime NOT NULL,
 create_by NVARCHAR(20) NOT NULL,
-update_date DATETIME NULL,
+update_date DateTime NULL,
 update_by NVARCHAR(20) NULL,
 PRIMARY KEY (id)
 );
